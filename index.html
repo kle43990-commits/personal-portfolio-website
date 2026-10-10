@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="My personal portfolio website showcasing my skills and projects."
+    />
+    <title>My Portfolio | Software Engineering Student</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar container" aria-label="Main navigation">
+        <a href="#home" class="logo">My<span>Portfolio.</span></a>
+
+        <button
+          class="menu-toggle"
+          id="menu-toggle"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="nav-links"
+        >
+          ☰
+        </button>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <button
+          id="theme-toggle"
+          class="theme-toggle"
+          aria-label="Switch to dark theme"
+        >
+          🌙
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero container">
+        <div class="hero-content">
+          <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+          <h1>Hello, I'm <span>Kiên</span></h1>
+          <h2>Software Engineering Student</h2>
+
+          <p class="hero-description">
+            I am passionate about programming, web development, and creating
+            useful digital experiences. I enjoy learning new technologies and
+            solving problems through code.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View My Projects</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <div class="avatar">
+            <span>&lt;/&gt;</span>
+          </div>
+          <div class="floating-badge">Building my future 🚀</div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <p class="eyebrow">GET TO KNOW ME</p>
+          <h2 class="section-title">About Me</h2>
+
+          <div class="about-content">
+            <p>
+              I am a Software Engineering student who is developing a strong
+              foundation in programming and software design. I believe that the
+              best way to learn is to understand the fundamentals and apply them
+              through practical projects.
+            </p>
+
+            <p>
+              My current interests include HTML, CSS, JavaScript, Java
+              programming, problem-solving, and responsive web development. My
+              goal is to become a skilled software developer and build
+              applications that help people.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section section-alt">
+        <div class="container">
+          <p class="eyebrow">WHAT I AM LEARNING</p>
+          <h2 class="section-title">My Skills</h2>
+
+          <div class="skills-grid">
+            <article class="skill-card">
+              <div class="skill-icon html-icon">5</div>
+              <h3>HTML</h3>
+              <p>Creating semantic and accessible web pages.</p>
+            </article>
+
+            <article class="skill-card">
+              <div class="skill-icon css-icon">3</div>
+              <h3>CSS</h3>
+              <p>Designing layouts and responsive interfaces.</p>
+            </article>
+
+            <article class="skill-card">
+              <div class="skill-icon js-icon">JS</div>
+              <h3>JavaScript</h3>
+              <p>Adding interactivity to websites.</p>
+            </article>
+
+            <article class="skill-card">
+              <div class="skill-icon java-icon">J</div>
+              <h3>Java</h3>
+              <p>Practicing programming logic and OOP concepts.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <p class="eyebrow">MY RECENT WORK</p>
+          <h2 class="section-title">My Projects</h2>
+          <p class="section-description">
+            Here are some projects that represent my learning journey.
+          </p>
+
+          <div class="filter-buttons" role="group" aria-label="Filter projects">
+            <button
+              class="filter-btn active"
+              data-filter="all"
+              aria-pressed="true"
+            >
+              All
+            </button>
+            <button class="filter-btn" data-filter="web" aria-pressed="false">
+              Web Development
+            </button>
+            <button
+              class="filter-btn"
+              data-filter="programming"
+              aria-pressed="false"
+            >
+              Programming
+            </button>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card" data-category="web">
+              <div class="project-visual visual-one">
+                <span>01</span>
+              </div>
+              <div class="project-info">
+                <p class="project-type">WEB DEVELOPMENT</p>
+                <h3>Responsive Photo Gallery</h3>
+                <p>
+                  A photo gallery website using HTML and CSS, designed for
+                  desktop and mobile devices.
+                </p>
+                <div class="tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>Responsive</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="programming">
+              <div class="project-visual visual-two">
+                <span>02</span>
+              </div>
+              <div class="project-info">
+                <p class="project-type">JAVA PROGRAMMING</p>
+                <h3>Student Management</h3>
+                <p>
+                  A beginner programming project for managing student
+                  information and practicing algorithms.
+                </p>
+                <div class="tags">
+                  <span>Java</span>
+                  <span>Methods</span>
+                  <span>Arrays</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="web">
+              <div class="project-visual visual-three">
+                <span>03</span>
+              </div>
+              <div class="project-info">
+                <p class="project-type">WEB DESIGN</p>
+                <h3>Personal Portfolio</h3>
+                <p>
+                  A personal website that introduces my background, skills, and
+                  projects.
+                </p>
+                <div class="tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section section-alt">
+        <div class="container">
+          <p class="eyebrow">GET IN TOUCH</p>
+          <h2 class="section-title">Contact Me</h2>
+          <p class="section-description">
+            Have a question or an opportunity? Feel free to send me a message.
+          </p>
+
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                required
+                minlength="2"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Write your message here..."
+                required
+                minlength="10"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+              Submit Message
+            </button>
+
+            <p id="form-feedback" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <a href="#home" class="logo">My<span>Portfolio.</span></a>
+        <p>Designed and built by Kiên.</p>
+        <p>&copy; <span id="current-year">2026</span> All rights reserved.</p>
+      </div>
+    </footer>
+
+    <button id="back-to-top" aria-label="Back to top">↑</button>
+  </body>
+</html>
